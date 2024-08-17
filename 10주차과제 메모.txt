@@ -1,0 +1,70 @@
+
+for n in range(3, 101, 1):
+    prime = True
+    for i in range(2, n, 1):
+        if n % i == 0 :
+            prime = False
+    if prime :
+        print(n, end=' ')
+
+
+
+
+
+for n in range(3,101,1) :
+    a = True
+    for i in range(2,n,1) :
+        if n%i == 0 :
+            a = False
+    if a :
+        print(n,end=' ')
+
+
+
+n = 0
+
+for n in range(3, 101, 1):
+    num = True
+    for i in range(2, n, 1):
+        if n % i == 0 :
+            num = False
+    if num :
+        print(n, end=' ')
+
+
+
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def find_primes(start, end):
+    prime_numbers = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            prime_numbers.append(num)
+    return prime_numbers
+
+start = 3
+end = 100
+
+prime_numbers = find_primes(start, end)
+print(prime_numbers)
+ 
+
+
+prime = []
+for i in range(3, 101):
+    num = True
+    for j in range(2, i):
+        if i % j == 0:
+            num = False
+            break
+    if num :
+        prime.append(i)
+
+print(prime)
